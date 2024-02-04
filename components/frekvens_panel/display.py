@@ -39,7 +39,7 @@ async def to_code(config):
     var = cg.new_Pvariable(config[CONF_ID])
 
     await cg.register_component(var, config)
-    await display.register_display(var, config)
+    # await display.register_display(var, config)
 
     cg.add(var.set_pins(
         config[CONF_LATCH_PIN],
